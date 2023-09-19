@@ -1,7 +1,11 @@
-# from django.urls import path
+from django.urls import path
 
-# from . import views
+from . import views
 
-# urlpatterns = [
-#     path("", views.index, name="index"),
-# ]
+
+app_name = 'products'
+
+
+urlpatterns = [
+    path("", views.products, name="index"),
+]
